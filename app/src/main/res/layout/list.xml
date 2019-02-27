@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#393B45">
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#F3B54A"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint=" "
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="#393B45" />
+
+
+    <ListView
+
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inputSearch"
+        android:dividerHeight="0dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Loading.."
+        android:textColor="#F3B54A"
+        android:textSize="16sp" />
+
+</RelativeLayout>
